@@ -1,0 +1,31 @@
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilos.css">
+        <link rel="">
+        <title>Caso 01</title>
+    </head>
+    <body>
+        <div class="contenedor">
+            <h1>Registro de Clientes</h1>
+            <form>
+                <label for="nombre">Cliente: </label>
+                <input id="nombre" type="text" placeholder="Ingrese nombre del cliente">
+                <label for="producto">Producto: </label>
+                <input id="producto" type="text" placeholder="Ingrese producto">
+                <label for="cantidad">Cantidad: </label>
+                <input id="cantidad" type="number" placeholder="Ingrese Cantidad">
+                <label for="precioU">Precio Unitario: </label>
+                <input id="precioU" type="number" placeholder="Ingrese Precio">
+                <label for="total">Total: </label>
+                <input id="total" type="number" readonly>
+                <button type="submit">Calcular Total</button>
+                <button type="submit">Registrar Venta</button>
+                <!--<button type="submit">Cantidad</button>-->
+            </form>
+        </div>
+        <script src="script.js"></script>
+    </body>
+    </html>
