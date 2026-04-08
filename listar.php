@@ -53,6 +53,21 @@ if (!$resultado) {
     .btn-eliminar:hover {
         background: #a93226;
     }
+    .btn-editar {
+    background: #1e8449; /* verde oscuro */
+    color: white;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-family: sans-serif;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-editar:hover {
+    background: #196f3d;
+}
 </style>
 </head>
 <body>
@@ -80,7 +95,10 @@ if (!$resultado) {
                     <td>S/ <?= number_format($venta['precio'], 2) ?></td>
                     <td>S/ <?= number_format($venta['total'], 2) ?></td>
                     <td>
-                        <!-- Botón eliminar -->
+                        
+                        <a href="editar.php?id=<?= $venta['id'] ?>" class="btn-editar">Editar</a>    
+                    
+                    <!-- Botón eliminar -->
                         <a href="eliminar.php?id=<?= $venta['id'] ?>" 
                            onclick="return confirm('¿Seguro que quieres eliminar esta venta?');" 
                            class="btn-eliminar">Eliminar</a>
